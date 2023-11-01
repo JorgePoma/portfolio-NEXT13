@@ -46,6 +46,26 @@
   width: var(--max-width);
 }
 
+.gridContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 100%;
+  height: 100%;
+  width: var(--max-width);
+}
+
+.icon {
+  margin: 1rem;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
@@ -108,7 +128,7 @@
   position: relative;
 }
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -133,7 +153,6 @@
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
